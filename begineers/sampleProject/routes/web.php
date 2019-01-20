@@ -21,6 +21,11 @@ Route::get('role',[
 ]);
 
 
+Route::get('terminate',[
+  'middleware'=>'Terminate',
+  'uses'=>'ABCController@index',
+]);
+
 Route::get('foo/bar', function () {
     return 'Hello World';
 });
