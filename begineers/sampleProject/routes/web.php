@@ -31,6 +31,4 @@ Route::get('terminate',[
   'uses'=>'ABCController@index',
 ]);
 
-Route::get('foo/bar', function () {
-    return 'Hello World';
-});
+Route::get('/foo/bar','UriController@index');
