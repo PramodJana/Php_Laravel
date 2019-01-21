@@ -31,4 +31,13 @@ Route::get('terminate',[
   'uses'=>'ABCController@index',
 ]);
 
+Route::get('/register',function()
+{
+  return view('register');
+});
+
+Route::post('/user/register',array('uses'=>'UserRegistration@postRegister'));
+
+
+
 Route::get('/foo/bar','UriController@index');
