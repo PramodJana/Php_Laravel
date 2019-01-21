@@ -17,7 +17,12 @@ Route::get('/', function () {
 
 Route::get('role',[
   'middleware'=>'Role:editor',
-  'uses'=>'TestController@index',
+  'uses'=>'DemoController@index',
+]);
+
+Route::get('/usercontroller/path',[
+  'middleware'=>'First',
+  'uses'=>'UserController@showPath',
 ]);
 
 
