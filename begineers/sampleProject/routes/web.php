@@ -42,6 +42,9 @@ Route::post('/user/register',array('uses'=>'UserRegistration@postRegister'));
 
 Route::get('/foo/bar','UriController@index');
 
+Route::get('/cookie/set','CookieController@setCookie');
+
+Route::get('/cookie/get','CookieController@getCookie');
 
 Route::get('/basic_response',function()
 {
