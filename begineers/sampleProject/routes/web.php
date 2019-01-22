@@ -41,3 +41,10 @@ Route::post('/user/register',array('uses'=>'UserRegistration@postRegister'));
 
 
 Route::get('/foo/bar','UriController@index');
+
+
+Route::get('/basic_response',function()
+{
+  return "Response is returned";
+}
+);
