@@ -51,3 +51,14 @@ Route::get('/basic_response',function()
   return "Response is returned";
 }
 );
+
+
+Route::get('/test',function()
+{
+  return view('test');
+});
+
+Route::get('/test2',function()
+{
+  return view('test2');
+});
