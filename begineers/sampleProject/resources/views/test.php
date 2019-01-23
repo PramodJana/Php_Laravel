@@ -1,7 +1,7 @@
 <html>
 <body>
   <h1>
-    <?php echo $name;?>
+    Example of redirection
   </h1>
 </body>
 </html>

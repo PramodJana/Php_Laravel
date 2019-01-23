@@ -53,10 +53,17 @@ Route::get('/basic_response',function()
 );
 
 
-Route::get('/test',function()
+Route::get('/test',['as'=>'testing',function()
 {
-  return view('test');
+  return view('test2');
+}]);
+
+Route::get('redirect',function()
+{
+  return redirect()->route('testing');
 });
+
+
 
 Route::get('/test2',function()
 {
